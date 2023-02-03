@@ -1,7 +1,7 @@
 import React from "react";
 import './Button.css';
 
-export interface ButtonProps {
+export interface ButtonProps extends React.HTMLProps<HTMLButtonElement>{
     label: string;
     children?: React.ReactNode;
     onClick?: () => void;
