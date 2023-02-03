@@ -3,10 +3,11 @@ import './Button.css';
 
 export interface ButtonProps {
     label: string;
+    onClick?: () => void;
 }
 
 const Button = (props: ButtonProps) => {
-    return <button>{props.label}</button>;
+    return <button onClick={props.onClick}>{props.label}</button>;
 };
 
 export default Button;
